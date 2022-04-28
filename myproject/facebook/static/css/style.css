@@ -1,0 +1,39 @@
+* {
+    color: brown;
+    /* background-image: url('../images/euclid.jpg'); */
+    /* background: url('../images/euclid.jpg') no-repeat; */
+}
+
+div {
+    border: 5px solid red;
+    color: blue;
+    /* margin: 100px; */
+}
+
+.a {
+    width: 200px;
+    transition: width 2s;
+}
+
+.a:hover {
+    width: 100px;
+    /* transform: scale(1.5, 2.5); */
+    /* transform: translate(20px, 40px); */
+    /* transform: rotate(20deg); */
+    /* transform: skew(20deg, 40deg); */
+}
+
+.mydiv {
+    border: 10px solid green;
+    /* background-color: coral; */
+    display: flex;
+    /* background: radial-gradient(red, yellow); */
+    justify-content: space-evenly;
+    /* box-shadow: 10px 20px; */
+    /* height: 200px; */
+}
+
+.mydiv1 {
+    border: 10px dotted blue;
+    background-color: aqua;
+}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact
+
+{% endblock title %}
+{% block content %}
+
+
+
+<div style="border:5px solid blue">
+    <center><h1>Enter your Information:-</h1>
+       
+        <form action="{% url 'save' %}" method = "post" >
+            {% csrf_token %}
+             <label for="">First Name = </label>
+            <input type="text" name ="fname" placeholder = "enter your name..." >
+            <br>
+            <br>
+            <label for=""> Email = </label>
+            <input type="email" name = "email" placeholder="enter your email...">
+             <br>
+            <br>
+            <label for=""> Age = </label>
+            <input type="number" name = "age" placeholder="enter your age...">
+
+            <br>
+            <br>
+            <label for=""> Pic = </label>
+            <input type="file" name = "upload">
+            <br>
+            <br>
+            <label for=""> Gender = </label>
+            <input type="radio" name = "gender" value ="male">Male
+            <input type="radio" name = "gender" value= "female">FeMale
+            <br>
+            <br>
+            <label for=""> agreement = </label>
+            <input type="checkbox" name = "gender" value ="male">Male
+            <input type="checkbox" name = "gender" value= "female">FeMale
+            <br>
+            <br>
+
+            <label for=""> Country = </label>
+            <select name="country" id="">
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">SA</option>
+                <option value="">WI</option>
+                <option value="">China</option>
+
+            </select>
+            <textarea name="address" id="" cols="30" rows="10">
+                
+            </textarea>
+            <br>
+            <br>
+            <input type="submit"  value = "save" >
+
+
+
+        </form>
+
+    
+    </center>
+
+</div>
+
+{% endblock content %}
